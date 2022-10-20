@@ -45,5 +45,6 @@ export class SeriesPending extends Component {
   handlerComplete(changeId: number) {
     const i = this.series.findIndex((item) => item.id === changeId);
     this.series[i].watched = !this.series[i].watched;
+    this.manageComponent();
   }
 }

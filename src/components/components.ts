@@ -19,7 +19,7 @@ export abstract class Component {
     if (!selector) return false;
     const element = document.querySelector(selector);
     if (element === null) return false;
-    element.outerHTML = template;
+    element.outerHTML += template;
     return true;
   }
 }

@@ -23,7 +23,7 @@ export class Component {
         const element = document.querySelector(selector);
         if (element === null)
             return false;
-        element.outerHTML = template;
+        element.outerHTML += template;
         return true;
     }
 }
