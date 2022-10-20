@@ -8,6 +8,10 @@ export class Main extends Component {
     this.renderAdd(this.selector, this.template);
   }
   createTemplate() {
-    return `<main class="main"></main>`;
+    return `
+    <main class="main">
+      <section class="series">
+        <h2 class="section-title">Series list</h2>
+    </main>`;
   }
 }
